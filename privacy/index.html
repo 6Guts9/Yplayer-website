@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy - Y Player</title><meta name="description" content="Y Player privacy policy"><link rel="stylesheet" href="../style.css"></head><body>
 <header><strong>Y Player</strong><nav><a href="/">Home</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></nav></header>
-<main><h1>Privacy Policy</h1><p><em>Last updated: October 18, 2026</em></p>
+<main><h1>Privacy Policy</h1><p><em>Last updated: October 21, 2026</em></p>
 <p>This policy explains how Y Player (package <code>yacine.yplayer</code>) handles information, including Google user data.</p>
 <h2>Information we access</h2><ul><li><strong>Local media:</strong> audio files and metadata on your device, used to build your library. This stays on your device.</li>
 <li><strong>Google account (optional):</strong> if you choose to connect, Y Player receives your basic account identity (name, email, profile photo) from Google Sign-In and a read-only authorization for your YouTube data.</li>
@@ -12,6 +12,16 @@
 <h2>Storage and sharing</h2><ul><li>Google authorization tokens and YouTube data are handled on your device and are not sent to servers operated by Y Player.</li>
 <li>We do not sell Google user data or share it with third parties, except with Google/YouTube as needed to provide the features you request.</li>
 <li>Embedded YouTube playback is provided by YouTube and may collect data under its own policies.</li></ul>
+<h2>Data protection and security</h2><p>We protect the sensitive Google user data (your Google account identity, OAuth tokens and YouTube data) with the following measures:</p>
+<ul><li><strong>Encryption in transit:</strong> all communication between the app and Google/YouTube APIs uses HTTPS (TLS). Y Player does not send this data over unencrypted connections.</li>
+<li><strong>Secure storage on your device:</strong> OAuth tokens are stored in encrypted storage protected by the Android Keystore system, and are not kept in plain text. YouTube data is kept in the app's private storage, which other apps cannot access, and Android app sandboxing applies.</li>
+<li><strong>No developer-side copy:</strong> Y Player does not operate servers that receive or store your Google user data, so there is no central database of tokens or YouTube data that could be breached.</li>
+<li><strong>Data minimization and least privilege:</strong> we request only the read-only <code>youtube.readonly</code> scope, and only after you choose to connect. We do not request write, upload, or delete permissions.</li>
+<li><strong>Restricted access:</strong> Google user data is accessible only to the app on your device and is not accessible to our team, to third parties, or to advertising or analytics services. Y Player does not include advertising SDKs.</li>
+<li><strong>No human access:</strong> no person reads your Google user data, because it never leaves your device except for requests to Google/YouTube.</li>
+<li><strong>Token removal:</strong> when you disconnect your account in the app, the stored tokens and cached YouTube data are deleted from your device. You can also revoke access at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+<li><strong>Retention:</strong> Google user data is kept only while your account is connected and is removed on disconnect, on clearing app data, or on uninstall.</li>
+<li><strong>Security updates and incidents:</strong> we keep dependencies up to date, and if we learn of a security issue affecting your data we will act promptly and notify affected users as required by applicable law. You can report security concerns to <a href="mailto:soussiyacine03@gmail.com">soussiyacine03@gmail.com</a>.</li></ul>
 <h2>Download and extraction</h2><p>Y Player does not download YouTube videos or audio, and does not play YouTube content in the background or while the player is hidden.</p>
 <h2>Your choices</h2><ul><li><strong>Disconnect:</strong> use the disconnect option in the YouTube section of the app.</li>
 <li><strong>Revoke access:</strong> visit your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
